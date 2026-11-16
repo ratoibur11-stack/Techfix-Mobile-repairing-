@@ -1,0 +1,6 @@
+{
+  "name": "TECHFIX Repair Proposal & Client Portal",
+  "description": "Professional repair proposal builder, client feedback manager, and live repair timeline tracker for TECHFIX Mobile Repairing Shop, Goalpara, Assam.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,204 @@
+{
+  "entities": {
+    "users": {
+      "title": "Users",
+      "description": "Registered users and shop customers",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string" },
+        "email": { "type": "string" },
+        "displayName": { "type": "string" },
+        "photoURL": { "type": "string" },
+        "lastLoginAt": { "type": "number" }
+      },
+      "required": ["uid"]
+    },
+    "repairRequests": {
+      "title": "RepairRequests",
+      "description": "Customer mobile repair booking requests",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "requestId": { "type": "string" },
+        "customerName": { "type": "string" },
+        "contactPhone": { "type": "string" },
+        "whatsappNumber": { "type": "string" },
+        "deviceBrand": { "type": "string" },
+        "deviceModel": { "type": "string" },
+        "problemDescription": { "type": "string" },
+        "status": { "type": "string" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["id", "requestId", "customerName", "contactPhone", "deviceModel", "problemDescription"]
+    },
+    "oldPhoneSellRequests": {
+      "title": "OldPhoneSellRequests",
+      "description": "Customer requests to sell old or damaged phones",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "requestId": { "type": "string" },
+        "customerName": { "type": "string" },
+        "contactPhone": { "type": "string" },
+        "deviceBrand": { "type": "string" },
+        "deviceModel": { "type": "string" },
+        "expectedPrice": { "type": "number" },
+        "status": { "type": "string" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["id", "requestId", "customerName", "contactPhone", "deviceModel"]
+    },
+    "proposals": {
+      "title": "Proposals",
+      "description": "Repair quotes and diagnostic proposals",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "proposalNumber": { "type": "string" },
+        "clientName": { "type": "string" },
+        "clientPhone": { "type": "string" },
+        "deviceBrand": { "type": "string" },
+        "deviceModel": { "type": "string" },
+        "status": { "type": "string" }
+      },
+      "required": ["id", "proposalNumber", "clientName", "clientPhone"]
+    },
+    "reviews": {
+      "title": "Reviews",
+      "description": "Customer ratings and feedback",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "customerName": { "type": "string" },
+        "rating": { "type": "number" },
+        "comment": { "type": "string" },
+        "timestamp": { "type": "number" }
+      },
+      "required": ["id", "customerName", "rating", "comment"]
+    },
+    "shopSettings": {
+      "title": "ShopSettings",
+      "description": "Persistent store branding, logo, business details, hero banner, themes, and invoice header/stamp/signature configuration",
+      "type": "object",
+      "properties": {
+        "logoUrl": { "type": "string" },
+        "updatedAt": { "type": "string" },
+        "updatedAtTimestamp": { "type": "number" }
+      }
+    },
+    "preOwnedPhones": {
+      "title": "PreOwnedPhones",
+      "description": "Second-hand smartphone inventory catalog",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "brand": { "type": "string" },
+        "model": { "type": "string" },
+        "price": { "type": "number" },
+        "inStock": { "type": "boolean" }
+      },
+      "required": ["id", "brand", "model", "price"]
+    },
+    "accessories": {
+      "title": "Accessories",
+      "description": "Genuine mobile parts and accessories inventory",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "category": { "type": "string" },
+        "price": { "type": "number" },
+        "inStock": { "type": "boolean" }
+      },
+      "required": ["id", "name", "price"]
+    },
+    "shopPhotos": {
+      "title": "ShopPhotos",
+      "description": "Shop gallery and repair lab photos",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "title": { "type": "string" },
+        "category": { "type": "string" },
+        "image": { "type": "string" }
+      },
+      "required": ["id", "title", "image"]
+    },
+    "taxInvoices": {
+      "title": "TaxInvoices",
+      "description": "Saved customer invoices, itemized totals, banners, and signatures",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "invoiceNumber": { "type": "string" },
+        "invoiceDate": { "type": "string" },
+        "customerName": { "type": "string" },
+        "totalAmountAfterTax": { "type": "number" }
+      },
+      "required": ["id", "invoiceNumber", "customerName"]
+    },
+    "activityLogs": {
+      "title": "ActivityLogs",
+      "description": "Audit log of all user and admin edits, uploads, bookings, and invoice activities saved in Firebase",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "action": { "type": "string" },
+        "category": { "type": "string" },
+        "details": { "type": "string" },
+        "actorUid": { "type": "string" },
+        "actorEmail": { "type": "string" },
+        "actorName": { "type": "string" },
+        "timestamp": { "type": "number" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["id", "action", "category", "details", "timestamp"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": { "$ref": "#/entities/users" },
+      "description": "User profile documents"
+    },
+    "/repairRequests/{requestId}": {
+      "schema": { "$ref": "#/entities/repairRequests" },
+      "description": "Customer repair booking requests"
+    },
+    "/oldPhoneSellRequests/{sellId}": {
+      "schema": { "$ref": "#/entities/oldPhoneSellRequests" },
+      "description": "Customer old phone sell applications"
+    },
+    "/proposals/{proposalId}": {
+      "schema": { "$ref": "#/entities/proposals" },
+      "description": "Repair proposals and cost estimates"
+    },
+    "/reviews/{reviewId}": {
+      "schema": { "$ref": "#/entities/reviews" },
+      "description": "Customer reviews and feedback"
+    },
+    "/shopSettings/{settingId}": {
+      "schema": { "$ref": "#/entities/shopSettings" },
+      "description": "Shop settings, persistent logo, business details, banner config, themes, and invoice branding"
+    },
+    "/preOwnedPhones/{phoneId}": {
+      "schema": { "$ref": "#/entities/preOwnedPhones" },
+      "description": "Certified pre-owned smartphones stock"
+    },
+    "/accessories/{accessoryId}": {
+      "schema": { "$ref": "#/entities/accessories" },
+      "description": "Mobile spare parts and accessories stock"
+    },
+    "/shopPhotos/{photoId}": {
+      "schema": { "$ref": "#/entities/shopPhotos" },
+      "description": "Shop interior and technician lab gallery photos"
+    },
+    "/taxInvoices/{invoiceId}": {
+      "schema": { "$ref": "#/entities/taxInvoices" },
+      "description": "Customer Non-GST / GST invoices"
+    },
+    "/activityLogs/{activityId}": {
+      "schema": { "$ref": "#/entities/activityLogs" },
+      "description": "Real-time audit trail of all website activities"
+    }
+  }
+}

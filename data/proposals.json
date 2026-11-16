@@ -1,0 +1,141 @@
+[
+  {
+    "id": "prop-req-3812",
+    "proposalNumber": "TF-REQ-3812",
+    "clientName": "TOIBUR RAHMAN",
+    "clientPhone": "9864245987",
+    "clientEmail": "ratoibur11@gmail.com",
+    "deviceBrand": "Apple iPhone",
+    "deviceModel": "iPhone 11",
+    "problemDescription": "Camera Lens Cracked / Blur Focus",
+    "diagnosticNotes": "Submitted online by TOIBUR RAHMAN. Urgency: Urgent Express.",
+    "technicianNote": "Final QC testing completed. Ready for collection at Dubapara.",
+    "progressPercent": 100,
+    "expectedDeliveryDate": "Ready for Collection",
+    "repairItems": [
+      {
+        "id": "item-3812",
+        "description": "Apple iPhone iPhone 11 Diagnostic & Repair (Camera Lens Cracked / Blur Focus)",
+        "category": "Hardware",
+        "cost": 500,
+        "timeEstimate": "1-2 Hours",
+        "warrantyPeriod": "90 Days Guarantee"
+      }
+    ],
+    "subtotal": 500,
+    "discount": 0,
+    "tax": 0,
+    "finalPrice": 500,
+    "advancePaid": 0,
+    "balanceDue": 500,
+    "estimatedCompletionTime": "Ready for Collection",
+    "warrantyDays": 90,
+    "status": "Completed",
+    "timelineEvents": [
+      { "id": "1", "stage": "Submitted", "title": "Online Request Received", "description": "Booked by TOIBUR RAHMAN", "timestamp": "26 Sept 2026, 06:53 pm", "completed": true },
+      { "id": "2", "stage": "Inspection", "title": "Technician Diagnosis", "description": "Camera module verified", "timestamp": "26 Sept 2026", "completed": true },
+      { "id": "3", "stage": "Approval", "title": "Client Quote Approval", "description": "Confirmed", "timestamp": "26 Sept 2026", "completed": true },
+      { "id": "4", "stage": "Repair", "title": "Lens Replacement", "description": "Completed", "timestamp": "26 Sept 2026", "completed": true },
+      { "id": "5", "stage": "Completed", "title": "Ready for Handover", "description": "Handed over to customer", "timestamp": "26 Sept 2026", "completed": true, "isCurrent": true }
+    ],
+    "createdAt": "26 Sept 2026, 06:53 pm",
+    "updatedAt": "26 Sept 2026, 06:53 pm"
+  },
+  {
+    "id": "prop-req-9914",
+    "proposalNumber": "TF-REQ-9914",
+    "clientName": "TOIBUR RAHMAN",
+    "clientPhone": "9864245987",
+    "clientEmail": "ratoibur11@gmail.com",
+    "deviceBrand": "Realme",
+    "deviceModel": "Note 7 pro",
+    "problemDescription": "Software Bootloop / Hang on Logo / Dead",
+    "diagnosticNotes": "Submitted online by TOIBUR RAHMAN. Urgency: Standard.",
+    "technicianNote": "Firmware flashing done, device boots normally.",
+    "progressPercent": 90,
+    "expectedDeliveryDate": "Ready for Pickup Today at Shop!",
+    "repairItems": [
+      {
+        "id": "item-9914",
+        "description": "Realme Note 7 pro Software Flashing & Bootloop Repair",
+        "category": "Software",
+        "cost": 200,
+        "timeEstimate": "Same Day",
+        "warrantyPeriod": "90 Days Guarantee"
+      }
+    ],
+    "subtotal": 200,
+    "discount": 0,
+    "tax": 0,
+    "finalPrice": 200,
+    "advancePaid": 500,
+    "balanceDue": 0,
+    "estimatedCompletionTime": "Ready for Pickup",
+    "warrantyDays": 90,
+    "status": "Completed",
+    "timelineEvents": [
+      { "id": "1", "stage": "Submitted", "title": "Online Request Received", "description": "Booked by TOIBUR RAHMAN", "timestamp": "05 Aug 2026, 08:20 pm", "completed": true },
+      { "id": "2", "stage": "Inspection", "title": "Technician Diagnosis", "description": "Bootloop inspected", "timestamp": "05 Aug 2026", "completed": true },
+      { "id": "3", "stage": "Repair", "title": "Firmware Flashed", "description": "Success", "timestamp": "05 Aug 2026", "completed": true },
+      { "id": "4", "stage": "Completed", "title": "Ready for Pickup", "description": "Ready", "timestamp": "05 Aug 2026", "completed": true, "isCurrent": true }
+    ],
+    "createdAt": "05 Aug 2026, 08:20 pm",
+    "updatedAt": "05 Aug 2026, 08:20 pm"
+  },
+  {
+    "id": "prop-101",
+    "proposalNumber": "TECH-8842",
+    "clientName": "Rahul Das",
+    "clientPhone": "+91 98765 43210",
+    "clientEmail": "rahul.das@example.com",
+    "deviceBrand": "Samsung",
+    "deviceModel": "Galaxy M31",
+    "imeiOrSerial": "358921004928172",
+    "problemDescription": "Phone fell into water. Screen flickers, battery draining extremely fast, and charging port heats up.",
+    "diagnosticNotes": "Water ingress detected around charging board and main IC section. Power IC output voltage fluctuating.",
+    "repairItems": [
+      {
+        "id": "item-1",
+        "description": "Motherboard De-oxidation & Ultrasonic Water Damage Cleaning",
+        "category": "Hardware",
+        "cost": 450,
+        "timeEstimate": "1 Hour",
+        "warrantyPeriod": "30 Days"
+      },
+      {
+        "id": "item-2",
+        "description": "Power IC (PMIC) Diagnostics & Component Level Repair",
+        "category": "IC-Level",
+        "cost": 1200,
+        "timeEstimate": "2 Hours",
+        "warrantyPeriod": "90 Days"
+      },
+      {
+        "id": "item-3",
+        "description": "Original AMOLED Display Assembly Replacement with Touch",
+        "category": "Hardware",
+        "cost": 2400,
+        "timeEstimate": "1-2 Hours",
+        "warrantyPeriod": "90 Days"
+      }
+    ],
+    "subtotal": 4050,
+    "discount": 250,
+    "tax": 0,
+    "finalPrice": 3800,
+    "advancePaid": 1000,
+    "balanceDue": 2800,
+    "estimatedCompletionTime": "24-48 Hours",
+    "warrantyDays": 90,
+    "status": "In Progress",
+    "timelineEvents": [
+      { "id": "1", "stage": "Submitted", "title": "Proposal Generated", "description": "Detailed estimate prepared by senior technician", "timestamp": "2026-07-28 10:30 AM", "completed": true },
+      { "id": "2", "stage": "Approved", "title": "Client Approved", "description": "Customer approved IC and Display repair with ₹1000 advance", "timestamp": "2026-07-28 01:15 PM", "completed": true },
+      { "id": "3", "stage": "In Progress", "title": "IC Micro-soldering", "description": "Cleaning board and replacing Power IC under microscope", "timestamp": "2026-07-29 11:00 AM", "completed": true, "isCurrent": true },
+      { "id": "4", "stage": "Testing", "title": "Bench Testing & QC", "description": "Thermal imaging and battery drain cycle validation", "timestamp": "Pending", "completed": false },
+      { "id": "5", "stage": "Ready", "title": "Ready for Pickup", "description": "Device ready for client pickup at Goalpara shop", "timestamp": "Pending", "completed": false }
+    ],
+    "createdAt": "2026-07-28",
+    "updatedAt": "2026-07-29"
+  }
+]

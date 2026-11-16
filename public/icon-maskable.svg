@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Full-Bleed Royal Blue Gradient -->
+    <linearGradient id="bgGradMask" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B4EA2" />
+      <stop offset="50%" stop-color="#003893" />
+      <stop offset="100%" stop-color="#002970" />
+    </linearGradient>
+
+    <!-- Gold Gradient -->
+    <linearGradient id="tfGoldMask" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFBEB" />
+      <stop offset="25%" stop-color="#FDE047" />
+      <stop offset="55%" stop-color="#F59E0B" />
+      <stop offset="85%" stop-color="#D97706" />
+      <stop offset="100%" stop-color="#78350F" />
+    </linearGradient>
+
+    <!-- Cyan Gradient -->
+    <linearGradient id="tfCyanMask" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E0F2FE" />
+      <stop offset="50%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#0284C7" />
+    </linearGradient>
+
+    <!-- Shield Fill -->
+    <linearGradient id="shieldFillMask" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#090e17" />
+    </linearGradient>
+
+    <filter id="shadowMask" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.6" />
+    </filter>
+  </defs>
+
+  <!-- Full-bleed background for Android squircle cropping -->
+  <rect width="512" height="512" fill="url(#bgGradMask)" />
+
+  <!-- Center all graphics in 75% safe area (scaling factor 0.8) -->
+  <g transform="translate(51.2, 45) scale(0.8)" filter="url(#shadowMask)">
+    <!-- Hexagon Shield -->
+    <polygon points="256,60 420,140 420,330 256,430 92,330 92,140" fill="url(#shieldFillMask)" stroke="url(#tfGoldMask)" stroke-width="12" stroke-linejoin="round" />
+    <polygon points="256,80 398,150 398,318 256,406 114,318 114,150" fill="none" stroke="url(#tfCyanMask)" stroke-width="4" stroke-dasharray="16 8" opacity="0.8" />
+
+    <!-- Smartphone Body Inside Shield -->
+    <rect x="186" y="145" width="140" height="230" rx="24" fill="#030712" stroke="url(#tfGoldMask)" stroke-width="7" />
+    <rect x="198" y="165" width="116" height="190" rx="14" fill="#0b1329" stroke="url(#tfCyanMask)" stroke-width="2" />
+    <rect x="236" y="153" width="40" height="4" rx="2" fill="#94a3b8" />
+    <circle cx="256" cy="368" r="4" fill="#94a3b8" />
+
+    <!-- Precision Gear on Screen -->
+    <g transform="translate(256, 255)">
+      <circle r="46" fill="none" stroke="url(#tfCyanMask)" stroke-width="6" opacity="0.6" />
+      <circle r="36" fill="#0f172a" stroke="url(#tfGoldMask)" stroke-width="5" />
+      <circle r="16" fill="#030712" stroke="url(#tfCyanMask)" stroke-width="4" />
+      <path d="M-6,-46 L6,-46 L4,-36 L-4,-36 Z M-6,46 L6,46 L4,36 L-4,36 Z M-46,-6 L-46,6 L-36,4 L-36,-4 Z M46,-6 L46,6 L36,4 L36,-4 Z M-34,-34 L-26,-42 L-19,-33 L-27,-25 Z M34,34 L26,42 L19,33 L27,25 Z M-34,34 L-42,26 L-33,19 L-25,27 Z M34,-34 L42,-26 L33,-19 L25,-27 Z" fill="url(#tfGoldMask)" />
+    </g>
+
+    <!-- Supercharged Lightning Bolt -->
+    <polygon points="266,175 232,255 260,255 244,325 284,240 256,240" fill="url(#tfGoldMask)" stroke="#FFFBEB" stroke-width="2" stroke-linejoin="round" />
+
+    <text x="256" y="475" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-weight="900" font-size="36" letter-spacing="4" fill="url(#tfGoldMask)">TECHFIX</text>
+  </g>
+</svg>
